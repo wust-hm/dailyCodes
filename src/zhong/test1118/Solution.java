@@ -37,6 +37,11 @@ public class Solution {
     }
 
 
+    /**
+     * 注意，这种解法为自己的错误解法。
+     * @param array 传入的数组
+     * @return 最长子序列的长度
+     */
     public int longestSubstr(int[] array){
         int len = array.length;
 
@@ -50,6 +55,7 @@ public class Solution {
             for (int j = 0; j < i; j++) {
                 if (array[j] < array[i]){
                     // res表示是从0~j中最大的数。注意，这里的错误是：不是和前面最大的比，即dp[]数组不一定是单调递增的，这点很重要
+                    // 注意：dp[i]表示将下标为i的数字放入其中时，最大的长度（该数字一定要选取），自己的解法就是在这里错了！！！
                     dp[i] = Math.max(dp[j] + 1, res);
                 }
             }
