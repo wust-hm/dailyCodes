@@ -92,4 +92,25 @@ public class Solution {
         }
         return len;
     }
+
+    public int cuttingRope(int n) {
+        double midTmp = Math.sqrt(n);
+
+        // 同时表示有n个
+        int mid = (int) midTmp;
+        boolean flag = false;
+        // 说明是整除
+        if (mid * mid == n){
+            flag = true;
+        }
+
+        int rest = n - mid;
+        //剩下的数能整除
+        if (rest % (mid - 1) == 0){
+
+        }
+
+        return 0;
+    }
+
 }

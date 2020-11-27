@@ -12,9 +12,9 @@ import java.util.List;
 public class Test {
 
     /**
-     * 单例模式下，
+     * 单例模式下。加入volatile是为了防止jvm指令重排
      */
-    private static Test test;
+    private static volatile Test test;
 
     /**
      * @description 空的构造方法。记住，构造方法是private，只能自己创建自己，不能由他人来创建
