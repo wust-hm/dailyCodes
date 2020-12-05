@@ -7,4 +7,13 @@ package zhong.test202012;
  * @motto talk is cheap, show me your code!
  */
 public class SynchronizedTest {
+    public synchronized void doSth(){
+        System.out.println("hello, world!");
+    }
+
+    public void doSth1(){
+        synchronized (SynchronizedTest.class){
+            System.out.println("我是你爸爸！");
+        }
+    }
 }
