@@ -14,12 +14,16 @@ public class DynamicTest {
         MaotaiWine maotaiWine = new MaotaiWine();
         InvocationHandler invocationHandler = new GuitaiA(maotaiWine);
 
+        // 获取类加载器。
         ClassLoader classLoader = MaotaiWine.class.getClassLoader();
+        // 获取其实现的接口
         Class[] classes = MaotaiWine.class.getInterfaces();
+        // 获取其实现类
         Class s = MaotaiWine.class;
 
         SellWine dynamicProxy = (SellWine) Proxy.newProxyInstance(MaotaiWine.class.getClassLoader(), MaotaiWine.class.getInterfaces(), invocationHandler);
-        dynamicProxy.sellWine9();
+        dynamicProxy.sellWine();
+        dynamicProxy.test();
         int flag = 0;
     }
 }

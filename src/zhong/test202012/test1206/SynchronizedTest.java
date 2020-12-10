@@ -1,4 +1,4 @@
-package zhong.test202012;
+package zhong.test202012.test1206;
 
 /**
  * @author zhong
