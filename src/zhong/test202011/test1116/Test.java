@@ -27,7 +27,7 @@ public class Test {
      * @description 获取实例的方法，注意，必须要为static修饰，因为只能通过类来访问，不能通过对象来访问。
      * 同时实例对象也要用static来修饰，因为static方法不能访问非static的变量
      * @param
-     * @return zhong.test202011.test1116.Test
+     * @return zhong.test202011.test1116.ByteDemo
      * @date 2020/11/17 10:18
      */
     public static Test getInstance(){
