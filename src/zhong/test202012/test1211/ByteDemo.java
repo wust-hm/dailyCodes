@@ -12,7 +12,7 @@ public class ByteDemo {
         b = b++;
     }
 
-    public void test() {
+    public void fun() {
         Byte a = 127;
         Byte b = 127;
         add(++a);
